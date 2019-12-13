@@ -1,0 +1,24 @@
+{
+    "name": "sourceability/phpstan-rules",
+    "description": "PHPStan additional rules",
+    "autoload": {
+        "psr-4": {
+            "Sourceability\\PHPStan\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sourceability\\PHPStan\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.3",
+        "phpstan/phpstan": "^0.12",
+        "phpstan/phpstan-strict-rules": "^0.12"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "type": "library",
+    "license": "MIT"
+}
