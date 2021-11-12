@@ -23,9 +23,10 @@ class InstanceOfVsNotNullRuleTest extends RuleTestCase
     {
         return new InstanceOfVsNotNullRule(
             new RuleLevelHelper(
-                $this->createBroker(),
+                $this->createReflectionProvider(),
                 true,
                 false,
+                true,
                 true
             )
         );
