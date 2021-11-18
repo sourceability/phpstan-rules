@@ -36,9 +36,10 @@ class ConstantBooleanNotIdenticalRuleTest extends RuleTestCase
     protected function getRule(): Rule
     {
         $ruleLevelHelper = new RuleLevelHelper(
-            $this->createBroker(),
+            $this->createReflectionProvider(),
             true,
             false,
+            true,
             true
         );
 
